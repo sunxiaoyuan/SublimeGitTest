@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title></title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+
+	<script type="text/javascript">
+
+	// people = new Object();
+	// people.name = "jack";
+	// people.age = "18";
+
+	// people = {name:"Tom",age:"18",sex:"male"};
+
+	function people(name,age,sex){
+		this._name = name;
+		this._age = age;
+		this._sex = sex;
+	}
+
+	son = new people("Tom","16","Female");
+
+	document.write("Name :"+son._name);
+
+	</script>
+</body>
+</html>

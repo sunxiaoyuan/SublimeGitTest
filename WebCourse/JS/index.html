@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+	
+	<title></title>
+
+	<script type="text/javascript">//使用src属性引入js文件
+
+	// 在JavaScript中，“方法”实际上是一种function对象
+	function max(a,b){
+		return a>b?a:b;
+	}
+	console.log(max(2,3));
+
+	// 方法也可以直接传给变量
+	var func = max;
+	console.log(func(5,8));
+
+	function max1(){
+		// arguments这个变量可以获取函数的实参
+		// console.log(arguments);
+		// 
+		var maxValue = arguments[0];
+		for (var i = 1; i < arguments.length; i++) {
+			maxValue = max(maxValue,arguments[i]);
+		}
+		return maxValue;
+	}
+	// 实际上，我们可以强制给一个没有形参列表的方法传入实参
+	console.log(max1(1,2,3,100,365,-98,0,-1));
+
+
+	</script>
+
+	
+
+</head>
+<body>
+</body>
+</html>
+
